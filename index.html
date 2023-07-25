@@ -55,14 +55,15 @@
                 <h1 class="informacoes__titulo">Oii, sou a Luma!</h1>
                 <p class="informacoes__texto">Atualmente estou fazendo graduação em Análise e Desenvolvimento de Sistemas e participando do projeto Oracle ONE na Alura!</p>
                 <div class="informacoes__redes">
-                    <button class="btn btn__informacoes__redes">
+                    <!-- <button class="btn btn__informacoes__redes">
                         <img 
                        class="informacoes__redes__icone" src="./assets/img/linkedin-icon-roxo.svg" alt="Icone Linkedin">
                         Linkedin
-                    </button>
+                    </button> -->
                     <button class="btn btn__informacoes__redes">
                         <img src="./assets/img/github-icon-roxo.svg" alt="" class="informacoes__redes__icone">
-                        GitHub
+                        <a href="https://github.com/lumamantelli">GitHub</a>
+                        
                     </button>
                 </div>
             </div>
@@ -248,29 +249,30 @@
                             Quer entrar em contato comigo? <br>
                             Preencha o formulário e entrarei em contato o mais breve possível.
                         </p>
-                        <form action="" class="contato__formulario" data-formulario>
+                        <form id="contatoForm" method="get" action="mailto:lumamantelli9@gmail.com" target="_blank" class="contato__formulario" data-formulario>
+                            <input type="hidden" name="Subject" value="Meu assunto">
+                            <input type="hidden" name="Body" value="">
+
                             <fieldset class="formulario__campo" action="">
                                 <label for="">Nome</label>
                                 <input name="nome" class="contato__input" type="text" placeholder="Seu nome" minlength="3" maxlength="50" required>
-                                <span class="mensagem__erro"></span>
+
                             </fieldset>
                             <fieldset class="formulario__campo" action="">
                                 <label for="">E-mail</label>
                                 <input class="contato__input" type="email" name="email" id="email" placeholder="seuemail@email.com" required>
-                                <span class="mensagem__erro"></span>
+                              
                             </fieldset>
                             <fieldset class="formulario__campo" action="">
                                 <label for="">Assunto</label>
                                 <input class="contato__input" type="text" name="assunto" id="assunto" placeholder="Assunto" maxlength="50" required>
-                                <span class="mensagem__erro"></span>
                             </fieldset>
                             <fieldset class="formulario__campo" action="">
                                 <label for="">Mensagem</label>
                                 <textarea class="contato__textarea" name="mensagem" id="mensagem" cols="30" rows="10" maxlength="300" required></textarea>
-                                <span class="mensagem__erro"></span>
                             </fieldset>
                             <div>
-                                <input value="Enviar" type="submit" class="btn btn__formulario" id="enviar" data-botao-enviar>
+                                <button value="Enviar" type="submit" class="btn btn__formulario" id="enviar" data-botao-enviar>Enviar</button>
                             </div>
                         </form>
                     </div>

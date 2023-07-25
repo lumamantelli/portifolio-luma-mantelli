@@ -1,75 +1,36 @@
-const camposDoFormulario = document.querySelectorAll("[required]");
-const formulario = document.querySelector('[data-formulario]');
 
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
+// const formulario = document.querySelector('[data-formulario]');
 
-    const listaRespostas = {
-        "nome": e.target.elements["nome"].value,
-        "email": e.target.elements["email"].value,
-        "assunto": e.target.elements["assunto"].value,
-        "mensagem": e.target.elements["mensagem"].value,
-    }
+// formulario.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
-    localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+//     const listaRespostas = {
+//         nome: e.target.elements["nome"].value,
+//         email: e.target.elements["email"].value,
+//         assunto: e.target.elements["assunto"].value,
+//         mensagem: e.target.elements["mensagem"].value,
+//     };
 
-    window.location.href = "../pages/formulario-2.html";
+//     const params = new URLSearchParams();
+//     params.append("subject", listaRespostas.assunto);
+//     params.append(
+//         "body",
+//         `   Nome: ${listaRespostas.nome}
+//             Email: ${listaRespostas.email}
+//             Mensagem: ${listaRespostas.mensagem}`
+//     );
 
-})
+//     const mailtoLink = `mailto:luma.mantelli123@gmail.com?${params.toString().replaceAll("+", " ")}`;
 
-// camposDoFormulario.forEach((campo) => {
-//     campo.addEventListener("blur", () => verificaCampo(campo));
-//     campo.addEventListener("invalid", evento => evento.preventDefault());
+//     window.location.href = mailtoLink;
+//     console.log(mailtoLink)
 // })
 
-// const tiposDeErro = [
-//     'valueMissing',
-//     'typeMismatch',
-//     'patternMismatch',
-//     'tooShort',
-//     'customError'
-// ]
-
-// const mensagens = {
-//     nome: {
-//         valueMissing: "O campo de nome não pode estar vazio.",
-//         patternMismatch: "Por favor, preencha um nome válido.",
-//         tooShort: "Por favor, preencha um nome válido."
-//     },
-//     email: {
-//         valueMissing: "O campo de e-mail não pode estar vazio.",
-//         typeMismatch: "Por favor, preencha um email válido.",
-//         tooShort: "Por favor, preencha um e-mail válido."
-//     },
-//     assunto: {
-//         valueMissing: "O campo de assunto não pode estar vazio.",
-//         patternMismatch: "Por favor, preencha um assunto válido.",
-//         tooShort: "Por favor, preencha um assunto válido."
-//     },
-//     mensagem: {
-//         valueMissing: "O campo de mensagem não pode estar vazio.",
-//         patternMismatch: "Por favor, escreva uma mensagem válida.",
-//         tooShort: "Por favor, escreva uma mensagem válida."
-//     }
-// }
-
-// function verificaCampo(campo) {
-//     let mensagem = "";
-
-//     tiposDeErro.forEach(erro => {
-//         if (campo.validity[erro]) {
-//             mensagem = mensagens[campo.name][erro];
-//         }
-//     })
-
-//     const mensagemErro = campo.parentNode.querySelector('.mensagem-erro');
-//     const validadorDeInput = campo.checkValidity();
-
-//     if(!validadorDeInput) {
-//         mensagemErro.textContent = mensagem;
-//     } else {
-//         mensagemErro.textContent = "";
-//     }
-
-// }
-
+$(function () {
+    document.getElementById('contatoForm').addEventListener('submit', function () {
+          var nome = this.querySelector('input[name=nome]'), nome = nome.value;
+          var email = this.querySelector('input[name=email]'), email = email.value;
+          var texto = 'Olá destinatário, \nMeu nome é '+ nome +' e meu email é '+ email;
+          this.querySelector('input[name=Body]').setAttribute('value', texto);
+      });
+    });
