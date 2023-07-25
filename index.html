@@ -249,10 +249,8 @@
                             Quer entrar em contato comigo? <br>
                             Preencha o formulário e entrarei em contato o mais breve possível.
                         </p>
-                        <form id="contatoForm" method="get" action="mailto:lumamantelli9@gmail.com" target="_blank" class="contato__formulario" data-formulario>
-                            <input type="hidden" name="Subject" value="Meu assunto">
-                            <input type="hidden" name="Body" value="">
-
+                        <form id="contatoForm" method="POST" action="https://formspree.io/f/xknlgezp" target="_blank" class="contato__formulario" data-formulario>
+        
                             <fieldset class="formulario__campo" action="">
                                 <label for="">Nome</label>
                                 <input name="nome" class="contato__input" type="text" placeholder="Seu nome" minlength="3" maxlength="50" required>
