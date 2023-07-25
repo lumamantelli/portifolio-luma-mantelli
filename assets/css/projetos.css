@@ -80,6 +80,7 @@
     .projetos__items {
        flex-direction: column;
        align-items: center;
+       justify-content: center;
        padding: 10px 0;
        border: 2px dashed var(--roxo);
        border-radius: 5px;
@@ -90,7 +91,31 @@
     }
 
     .projetos__info {
-        width: 30vw;
+        flex-direction: row;
+        width: 40vw;
         padding-bottom: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn__projetos {
+        width:45%;
+        font-size: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn__projetos__demo {
+        width: 45%;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .projeto__botoes {
+        justify-content: space-between;
+        height: 50%;
+        padding-left: 9px;
     }
 }

@@ -1,5 +1,4 @@
 .formacao {
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -53,6 +52,12 @@
 
 .formacao__ano {
     font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .formacao__logos {
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 1024px) {

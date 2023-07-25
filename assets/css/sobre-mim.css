@@ -2,15 +2,10 @@
     background: var(--amarelo);
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
 
-.sobre__titulo {
-    color: var(--roxo);
-    font-family: var(--tektur);
-    font-weight: 600;
-    font-size: 2.5rem;
-    padding: 10px;
-}
+
 
 .sobre__texto {
     color: var(--branco);
@@ -21,5 +16,6 @@
 @media screen and (max-width: 768px) {
     .sobre__texto {
         margin: 2%;
+        padding: 10px 30px;
     }
 }

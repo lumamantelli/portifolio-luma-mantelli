@@ -72,6 +72,16 @@ label{
     color: var(--amarelo);
 }
 
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
 
 
 
