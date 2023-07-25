@@ -1,0 +1,25 @@
+.sobre__mim {
+    background: var(--amarelo);
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre__titulo {
+    color: var(--roxo);
+    font-family: var(--tektur);
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.sobre__texto {
+    color: var(--branco);
+    padding: 10px 50px 10px 50px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .sobre__texto {
+        margin: 2%;
+    }
+}

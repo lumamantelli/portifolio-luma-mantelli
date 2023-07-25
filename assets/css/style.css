@@ -1,0 +1,81 @@
+:root {
+    --amarelo: #ffc219;
+    --azul-fraco: #0fc3e8; 
+    --branco: #ffffff;
+    --preto: #000000;
+    --roxo: #360745;
+
+    --montserrat-sub: 'Montserrat+Subrayada', sans-serif;
+    --quicksand: 'Quicksand', sans-serif;
+    --tektur: 'Tektur', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+}
+
+h1 {
+    font-family: var(--tektur);
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: var(--quicksand);
+    font-weight: 600;
+}
+
+p {
+    font-family: var(--quicksand);
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.btn {
+    display: flex;
+    cursor: pointer;
+    font-family: var(--quicksand);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    box-shadow: none;
+    border:none;
+}
+
+input, textarea {
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+label{
+    font-family: var(--quicksand);
+    font-size: 0.9rem;
+    color: var(--amarelo);
+}
+
+
+
+
+
+
+
+

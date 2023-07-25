@@ -1,0 +1,62 @@
+.formacao {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--amarelo);
+}
+
+.formacao__titulo {
+    color: var(--roxo);
+}
+
+.formacao__conteudo {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.formacao__items {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 15px;
+}
+
+.formacao__dados {
+    padding-top: 2%;
+}
+
+.formacao__logos {
+    background: var(--roxo);
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    min-width: 95%;
+    padding: 10px;
+}
+
+.logo__uniasselvi {
+    width: 70%;
+}
+
+.logo__alura {
+    width: 120%;
+}
+
+.formacao__nome__facul {
+    font-size: 1rem;
+
+}
+
+.formacao__ano {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .formacao__items {
+        margin: 0 3%;
+    }
+}

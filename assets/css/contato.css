@@ -1,0 +1,127 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--amarelo);
+    padding: 4% 0;
+}
+
+.contato__titulo {
+    padding-bottom: 4%;
+}
+
+.contato__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contato__formulario {
+    width: 99%;
+}
+
+.formulario__campo {
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 2% 0;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.contato__input, .contato__textarea {
+    font-family: var(--quicksand);
+
+}
+
+.contato__input:focus, .contato__textarea:focus{
+    border-bottom: 3px solid var(--amarelo);
+}
+
+.contato__texto {
+    font-size: 1rem;
+    color: var(--branco);
+    padding: 0 0 4% 0;
+    line-height: 1.5rem;
+    text-align: start;
+
+}
+
+.contato__img {
+    width: 35%;
+}
+
+.contato__conteudo {
+    background: var(--roxo);
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 15px 15px 60px -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4% 0;
+}
+
+.contato__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0;
+}
+
+.btn__formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border-top: 2px solid var(--branco);
+    border-bottom: 2px solid var(--branco);
+    color: var(--branco);
+}
+
+.btn__formulario:hover {
+    transform: scale(1.02);
+    background: var(--amarelo);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn__formulario:active {
+    transform: none;
+    background: var(--amarelo);
+    box-shadow: inset 5px 5px 15px #000000;
+    transition: all 0.1s ease-in;
+}
+
+.mensagem-erro {
+    color: red;
+}
+
+@media screen and (max-width: 1024px) {
+    .contato__box {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .contato__box{
+        width: 90%;
+    }
+
+    .contato__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato__conteudo {
+        width: 70%;
+    }
+
+    .contato__img {
+        margin-bottom: 5%;
+    }
+}

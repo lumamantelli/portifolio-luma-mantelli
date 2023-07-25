@@ -1,0 +1,20 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5vh;
+}
+
+.rodape__conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__copy {
+    width: 10px;
+    padding-right: 0.2%;
+}
+
+.rodape__texto {
+    font-size: 0.8rem;
+}

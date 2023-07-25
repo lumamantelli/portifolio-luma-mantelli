@@ -1,0 +1,28 @@
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.mensagem__maior {
+    font-family: var(--tektur);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.mensagem__menor {
+    text-align: center;
+    font-family: var(--tektur);
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 15px;
+}

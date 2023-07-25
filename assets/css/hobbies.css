@@ -1,0 +1,59 @@
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+
+.hobbies__titulo {
+    color: var(--amarelo);
+    padding-bottom: 5%;
+}
+
+.hobbies__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobbies__conteudo {
+    color: var(--roxo);
+    display: flex;
+    font-family: var(--quicksand);
+    font-weight: 600;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.hobbies__items {
+    align-items: center;
+    border: thick double var(--roxo);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+    padding: 10px;
+    width: 80px;
+}
+
+.hobbies__img {
+    width: 65px;
+    height: 70px;
+    padding: 10px 0;
+}
+
+.hobbies__texto {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hobbies__items {
+        margin: 20px 20px;
+        height: 150px;
+    }
+
+    .hobbies__conteudo {
+        flex-wrap: wrap;
+    
+    }
+}
